@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Headwinds of Destiny</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="body">
+  <h1 id="header"></h1>
+  <div id="window">
+    <div id="inside">
+      <div id="img">
+        <input id="index" type="image" src="Images/index.png">
+        <input id="road" type="image" src="Images/road.png">
+        <input id="cave" type="image" src="Images/cave.png">
+      </div>
+      <div id="rps" class="rps">
+        <div id="gameRPS">LET'S GAME!</div>
+        <div id="countdown"></div>
+        <div id="rps-stats">
+          <div id="player"><span id="user-choice"></span></div>
+          <div id="rps-results">
+            <h2>Result: <span id="result"></span></h2>
+          </div>
+          <div id="AI"><span id="computer-choice"></span></div>
+        </div>
+        <div id="rps-buttons">
+          <button id="rock">meteor</button>
+          <button id="paper">force field</button>
+          <button id="scissors">light saber</button>
+        </div>
+      </div>
+      <div id="grid" class="grid">
+        <div id="scoreBoard">
+          <h2 id="score">0</h2>
+        </div>
+        <div class="field">
+          <div class="square" id="1"></div>
+          <div class="square" id="2"></div>
+          <div class="square" id="3"></div>
+          <div class="square" id="4"></div>
+          <div class="square" id="5"></div>
+          <div class="square" id="6"></div>
+          <div class="square" id="7"></div>
+          <div class="square" id="8"></div>
+          <div class="square" id="9"></div>
+        </div>
+        <div id="scoreBoard">
+          <h2 id="time-left">60</h2>
+        </div>
+      </div>
+      <div id="text">
+      </div>
+      <div id="game">
+        <div id="buttons">
+          <button id="button1"></button>
+          <button id="button2"></button>
+          <button id="button3"></button>
+        </div>
+        <div id="monsterStats">
+          <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+          <span class="stat">Health: <strong><span id="monsterHealth"></span></strong><span
+              id="monsterHealthAnimation"></span></span>
+        </div>
+        <div id="stats">
+          <span class="stat">XP: <span id="xpText"></span></span>
+          <span class="stat">Health: <span id="healthText"></span> (<span id="hcText"></span>)<span
+              class="health-animation"></span></span>
+          <span class="stat">Dust: <span id="dustText"></span><span id="cDustText"></span> <span id="rDustText"></span>
+            <span id="lDustText"></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="extraButtons">
+    <div id="quest-items">
+      <button id="popup-button">
+        <img src="paper.png" alt="This is a military dog tag">
+      </button>
+      <div id="popup-container" class="popup">
+        <div class="popup-content">
+          <img id="popup-image1" class="popup-image" src="mole.png" alt="Image 1">
+          <img id="popup-image2" class="popup-image" src="rock.png" alt="Image 2">
+          <button id="close-button">Close</button>
+        </div>
+      </div>
+      <div id="puzzle-container" class="popup">
+        <div class="popup-content">
+          <div id="puzzle-content">
+            <ul>
+              <li id="tile0">╔</li>
+              <li id="tile1">♔</li>
+              <li id="tile2">╗</li>
+              <li id="tile3">↯</li>
+              <li id="tile4"></li>
+              <li id="tile5">☆</li>
+              <li id="tile6">╚</li>
+              <li id="tile7">◉</li>
+              <li id="tile8">╝</li>
+            </ul>
+          </div>
+          <button id="close-puzzle-button">Close</button>
+        </div>
+      </div>
+      <button id="puzzleBox">
+        <img src="mole.png" alt="This is a locket">
+      </button>
+    </div>
+    <div id="arrowRight">
+      <input type="image" src="Images/right.png" width="80" height="80">
+    </div>
+  </div>
+  <script type="module" src="updatingCombat.js"></script>
+</body>
+
+</html>
